@@ -1,0 +1,58 @@
+html,
+body {
+    background: #0a0a0a;
+}
+body {
+    font-family: sans-serif;
+    font-size: 21px;
+    color: #d0cdc4;
+    margin: 40px auto 0 auto;
+    display: flex;
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+}
+body:before {
+    content: 'обновления по датам:';
+    font-size: 33px;
+    position: absolute;
+    top: 10px;
+}
+h3 {
+    font-size: 28px;
+    width: auto;
+    transition: 0.3s;
+    border-bottom: 4px #5d7f9700 solid
+}
+a:not(:last-child)>h3::before {
+    content: "•";
+    color: #ffffff6b;
+    margin-right: 14px;
+}
+h3:hover {
+    transition: 0.3s;
+    border-bottom: 4px #1283d1 solid
+}
+a:not(:last-child) {
+    margin-left: 14px
+}
+a {
+    text-decoration: none;
+    color: #5d7f97;
+    width: auto;
+    transition: 0.3s;
+}
+a:hover {
+    color: #1283d1;
+    transition: 0.3s;
+}
+a#home {
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    padding: 4px;
+    background: #2b1002;
+    color: #f1d9d9;
+}

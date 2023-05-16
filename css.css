@@ -1,0 +1,108 @@
+html,
+body {
+	font-family: sans-serif;
+	font-size: 21px;
+	color: #95938d;
+	background: #0a0a0a;
+	max-width: 1000px;
+	padding: 10px 0 0 10px;
+	white-space: normal;
+}
+code {
+	white-space: normal!important;
+	color: #9ca694;
+	font-family: monospace;
+}
+h3 {
+	font-size: calc(1em * 1.168);
+}
+h2 {
+	font-size: calc(1em * 1.168 * 1.168);
+}
+h1 {
+	font-size: calc(1em * 1.168 * 1.168 * 1.168);
+}
+a {
+	text-decoration: none;
+	color: #5d7f97;
+	width: auto;
+	transition: 0.3s;
+}
+a:hover {
+	color: #1283d1;
+	transition: 0.3s;
+}
+h2 > a:before {
+	content: "";
+	display: inline-block;
+	width: 1em;
+	height: 1em;
+	background-image: url('https://raw.githubusercontent.com/RectalWorm/RectalWorm.github.io/main/download.svg');
+	background-repeat: no-repeat;
+	background-position: center;
+	margin-right: 0.3em;
+}
+small {
+	font-size: 0.7em
+}
+small.orig_dl {
+	margin-right: 10px;
+}
+small a {
+	color: #687aba
+}
+.sha256 {
+	color: #c3b983;
+	margin: 5px 0;
+	padding: 5px 0;
+	display: block;
+}
+.tags {
+	font-size: 0.85em
+}
+.tags code {
+	color: #818f80;
+	margin-left: 5px;
+}
+.tags > code:not(:last-child)::after {
+	color: #8a8a8a;
+	margin-left: 5px;
+	content: "•";
+}
+.tokens {
+	font-size: 0.85em
+}
+.tokens code {
+	color: #4c9c47;
+	margin-left: 5px;
+}
+.tokens > code:not(:last-child)::after {
+	color: #8a8a8a;
+	margin-left: 5px;
+	content: "•";
+}
+ul:has(li:nth-last-child(n+5)) {
+	color: #c9d8c2;
+	/*column-count: 5;
+	column-gap: 20px;*/
+}
+h2:not(:has(a)) {
+	color: #b6b4ab;
+	font-size: 1.15em;
+}
+h2:has(a) {
+	border-top: 2px #95938d solid;
+	padding-top: 20px
+}
+.preview {
+	transition: 0.5s;
+}
+
+a#back {
+	position: fixed;
+	top: 10px;
+	right: 10px;
+	padding: 4px;
+	background: #2b1002;
+	color: #f1d9d9;
+}
